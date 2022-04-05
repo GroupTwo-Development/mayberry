@@ -2,6 +2,7 @@
   <a class="brand" href="{{ home_url('/') }}">
     {{ $siteName }}
   </a>
+  <p>This is a working test work sage</p>
 
   <nav class="nav-primary">
     @if (has_nav_menu('primary_navigation'))

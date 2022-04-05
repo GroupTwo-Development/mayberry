@@ -14,7 +14,7 @@ require('@tinypixelco/laravel-mix-wp-blocks');
 
 mix
   .setPublicPath('./public')
-  .browserSync('sage.test');
+  .browserSync('https://mayberry.test');
 
 mix
   .sass('resources/styles/app.scss', 'styles')
