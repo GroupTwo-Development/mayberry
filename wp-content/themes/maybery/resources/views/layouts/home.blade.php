@@ -1,4 +1,4 @@
- <a class="sr-only focus:not-sr-only" href="#main">
+ <a class="screen-reader-text" href="#main">
     {{ __('Skip to content') }}
   </a>
 

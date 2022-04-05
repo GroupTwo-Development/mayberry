@@ -1,0 +1,65 @@
+.style-guide {
+  position: relative;
+
+  ul.style-guide__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li.style-guide__list-item {
+      width: 49%;
+      height: 200px;
+      margin-bottom: 1%;
+
+      @include media-breakpoint-up(lg){
+        width: 24%;
+      }
+
+      &:first-child {
+        background-color: #0d3b66;
+      }
+
+      &:nth-child(2) {
+        background-color: #faf0ca;
+      }
+
+      &:nth-child(3) {
+        background-color: #ee964b;
+      }
+
+      &:nth-child(4) {
+        background-color: #f95738;
+      }
+
+      &:last-child {
+        background-color: #f4d35e;
+      }
+    }
+  }
+}
+
+.btn {
+  border-radius: 0;
+  color: #fff;
+  outline: none;
+  @include button-bg($color_blue);
+}
+
+.btn-primary {
+  @include button-bg($color_two);
+}
+
+.btn-schedule {
+  @include button-bg($color_three);
+}
+
+.btn-request-info {
+  @include button-bg($color_four);
+}

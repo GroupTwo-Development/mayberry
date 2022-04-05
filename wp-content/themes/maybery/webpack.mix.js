@@ -18,6 +18,17 @@ mix
   .setPublicPath('./public')
   .browserSync('https://mayberry.test');
 
+  mix.webpackConfig(webpack => {
+    return {
+        plugins: [
+            new webpack.DefinePlugin({
+                __VUE_OPTIONS_API__: true,
+                __VUE_PROD_DEVTOOLS__: false,
+            }),
+        ],
+    }
+})
+
 mix
   .sass('resources/styles/app.scss', 'styles')
   .sass('resources/styles/editor.scss', 'styles')
@@ -40,3 +51,5 @@ mix
 mix
   .sourceMaps()
   .version();
+
+

@@ -3,13 +3,13 @@
  */
 import 'jquery';
 import 'bootstrap';
-import {createApp} from 'vue';
+// import {createApp} from 'vue';
 
-import homePage from './vue/homepage'
+// import homePage from './vue/homepage'
 
 $(document).ready(() => {
   // console.log('Hello world');
 });
 
-const homeApp = createApp(homePage);
-homeApp.mount('#home-app');
+// const homeApp = createApp(homePage);
+// homeApp.mount('#home-app');
