@@ -1,7 +1,17 @@
 body {
   // apply font
+  font-weight: 600;
+  background-color: bisque;
 }
 
 .brand {
   // apply different font
+}
+
+.menu-menu-1-container{
+  ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
 }

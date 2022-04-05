@@ -1,4 +1,6 @@
 const mix = require('laravel-mix');
+require('laravel-mix-purgecss');
+require('laravel-mix-copy-watched')
 require('@tinypixelco/laravel-mix-wp-blocks');
 
 /*
@@ -26,7 +28,7 @@ mix
 
 mix
   .js('resources/scripts/app.js', 'scripts')
-  .js('resources/scripts/customizer.js', 'scripts')
+  .js('resources/scripts/customizer.js', 'scripts').vue()
   .blocks('resources/scripts/editor.js', 'scripts')
   .autoload({ jquery: ['$', 'window.jQuery'] })
   .extract();
