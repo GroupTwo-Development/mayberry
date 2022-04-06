@@ -3,11 +3,11 @@
   </a>
 
   @include('partials.header')
-    <main id="home-app" class="main">
+    <main id="main" class="main">
       <div class="container">
         @yield('content')
       </div>
-      
+
     </main>
 
   @include('partials.footer')
