@@ -34,6 +34,7 @@ return [
 
     'compiled' => storage_path('framework/views'),
 //    'compiled' => '/tmp/sage-cache',
+//    'compiled' => '/tmp/sage-cache',
 
     /*
     |--------------------------------------------------------------------------
