@@ -1,109 +1,65 @@
-.main-navigation {
-	display: block;
-	width: 100%;
+.mega-menu {
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+  .navbar-nav > li {
+    a {
+      text-transform: uppercase;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
+      &:hover {
+        color: #000;
+        background-color: $color_blue;
+      }
+    }
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
+    &.active,
+    &.show {
+      > a {
+        &,
+        &:focus {
+          color: #000;
+          background-color: $color_two;
+        }
+      }
+    }
+  }
 
-			li {
+  .navbar-nav > li.mega-menu {
+    position: static;
 
-				&:hover > ul,
-				&.focus > ul {
-					display: block;
-					left: auto;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-
-	li {
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-	}
-
-	.nav-links {
-		display: flex;
-	}
-
-	.nav-previous {
-		flex: 1 0 50%;
-	}
-
-	.nav-next {
-		text-align: end;
-		flex: 1 0 50%;
-	}
+    > .dropdown-menu {
+      width: 100%;
+      min-width: 88%;
+      li{
+        > .dropdown-menu {
+          display: flex;
+          flex-flow: column;
+          width: 100%;
+          position: static;
+          border: 0;
+          border-radius: 0;
+          background-color: transparent;
+        }
+      }
+    }
+    .show{
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $color_blue;
+      border: 0;
+      border-radius: 0;
+      padding-right: 30px;
+      li{
+        border-bottom: 1px solid #fff;
+        width: 45%;
+        &:last-child{
+          border-bottom: 0;
+        }
+        > a {
+          color: #fff;
+        }
+      }
+    }
+  }
 }

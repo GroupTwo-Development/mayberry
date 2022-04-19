@@ -77,3 +77,12 @@
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+
+.has-lrm{
+	.popmake-close {display: none;}
+  }
+  
+  .logged-in{
+	.popmake-close {display: block;}
+  }

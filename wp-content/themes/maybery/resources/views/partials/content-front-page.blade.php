@@ -1,13 +1,9 @@
 
-<?php
-  $title = 'Getting Started';
-  $content = 'A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers,
-        as well as speed up development times.';
-?>
+
 <header class="header pt-5 pb-1">
   <div class="container">
-      <h1 class="style-guide__title">{{$title}}</h1>
-      <p>{{$content}}</p>
+      {{-- <h1 class="style-guide__title">{{$title}}</h1>
+      <p>{{$content}}</p> --}}
   </div>
 </header>
 

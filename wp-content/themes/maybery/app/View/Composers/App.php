@@ -24,6 +24,7 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
+            'primaryNavigation' => $this->primaryNavigation(),
         ];
     }
 
@@ -35,5 +36,23 @@ class App extends Composer
     public function siteName()
     {
         return get_bloginfo('name', 'display');
+    }
+
+    /**
+     * Primary Nav Menu arguments
+     * @return array
+     */
+    public function primaryNavigation()
+    {
+        $args = array(
+            'theme_location' => 'primary_navigation',
+            'container'  => '',
+            'container_class' => '',
+            'menu_class' => 'navbar-nav',
+            'depth' => 3,
+            'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+            'walker' => new \App\wp_bootstrap5_navwalker()
+        );
+        return $args;
     }
 }

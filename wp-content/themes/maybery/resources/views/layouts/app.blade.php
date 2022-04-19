@@ -1,3 +1,4 @@
+
 <div class="max-w-3xl mx-auto">
 
   <a class="screen-reader-text" href="#main">
@@ -18,3 +19,4 @@
 
   @include('partials.footer')
 </div>
+
